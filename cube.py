@@ -45,7 +45,6 @@ def calculate_x(i, j, k):
     vector_rot_x = np.matmul(vector, rotation_x)
     vector_rot_y = np.matmul(vector_rot_x, rotation_y)
     vector_rot_z = np.matmul(vector_rot_y, rotation_z)
-    logging.info(vector_rot_z[2])
     return vector_rot_z[0]
 
 
