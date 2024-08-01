@@ -13,4 +13,5 @@ dist/
 .envrc
 logs/
 *.log
+log.txt
 Thumbs.db
