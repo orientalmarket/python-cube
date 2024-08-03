@@ -2,13 +2,13 @@ import numpy as np
 import sys
 
 
-cube_width = 24.0
-width = 80
-height = 32
+cube_width = 22.0
+width = 54
+height = 30
 horizontal_offset = 0 * cube_width
 distance_from_cam = 100
 K1 = 22
-increment_speed = 1.8
+increment_speed = 1.6
 angle_x = angle_y = angle_z = 0
 
 
