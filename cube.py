@@ -1,13 +1,14 @@
 import numpy as np
 import sys
 
-cube_width = 14.0
+
+cube_width = 24.0
 width = 80
-height = 22
-horizontal_offset = -0.5 * cube_width
+height = 32
+horizontal_offset = 0 * cube_width
 distance_from_cam = 100
-K1 = 40
-increment_speed = 0.6
+K1 = 22
+increment_speed = 1.8
 angle_x = angle_y = angle_z = 0
 
 
@@ -47,7 +48,7 @@ def calculate_surface(cube_x, cube_y, cube_z, char):
     x_prime = int(width / 2 + horizontal_offset + K1 * ooz * x * 2)
     y_prime = int(height / 2 + K1 * ooz * y)
     index = x_prime + y_prime * width
-    if index >= 0 and index < width * height:
+    if (index >= 0) and (index < (width * height)):
         if ooz > z_buffer[index]:
             z_buffer[index] = ooz
             char_buffer[index] = char
