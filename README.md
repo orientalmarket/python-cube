@@ -1,3 +1,3 @@
 # python-cube
 
-Refactored rotating 3-D ASCII cube
+Rotating 3-D ASCII cube
